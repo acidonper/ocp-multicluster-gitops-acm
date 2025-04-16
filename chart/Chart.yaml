@@ -13,5 +13,5 @@ mantainers:
 dependencies:
   - name: infra-acm
     repository: 'https://acidonper.github.io/ocp-multicluster-gitops-infra-charts'
-    version: 0.1.1
+    version: 0.1.2
     condition: infra-acm.enabled
