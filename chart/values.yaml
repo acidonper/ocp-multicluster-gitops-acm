@@ -1,0 +1,7 @@
+infra-acm:
+  enabled: true
+  repoURL: https://acidonper.github.io/infra-chart
+  environments:
+    - des
+    - pre
+    - pro

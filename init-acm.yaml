@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-application-setup-init
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/acidonper/ocp-multicluster-gitops-acm.git
+    path: chart
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: openshift-gitops
+  syncPolicy:
+    automated: {}
