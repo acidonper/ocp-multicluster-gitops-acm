@@ -1,6 +1,6 @@
 infra-acm:
   enabled: true
-  repoURL: https://acidonper.github.io/ocp-multicluster-gitops-infra-charts
+  repoURL: https://github.com/acidonper/ocp-multicluster-gitops-infra-values.git
   argo_namespace: openshift-gitops
   environments:
     - des
